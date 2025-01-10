@@ -115,6 +115,7 @@ hr {
   max-width: 80%;
   width: 550px;
   display: block;
+  border-radius: 100%;
   margin: auto;
 }
 
