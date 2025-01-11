@@ -3,79 +3,130 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>home | adarshbalika</title>
+    <title>home | bhushanrahane</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet" />
   </head>
   <body>
-    <nav class="navigation container">
-      <div class="nav-brand"><a href="/">adarshbalika</a></div>
-      <ul class="list-non-bullet nav-pills">
-        <li class="list-item-inline">
-          <a class="link link-active" href="/">home</a>
-        </li>
-        <li class="list-item-inline">
-          <a class="link" href="/projects.html">projects</a>
-        </li>
-        <li class="list-item-inline">
-          <a class="link" href="/blogs.html">blogs</a>
-        </li>
-      </ul>
+    <!-- Particles.js container -->
+    <div id="particles-js"></div>
+
+    <nav class="navbar navbar-expand-lg navigation">
+      <div class="container">
+        <a class="navbar-brand nav-brand" href="/">bhushanrahane</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link link link-active" href="/">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link" href="https://github.com/bhushanrahane?tab=repositories">projects</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link link" href="/blogs.html">blogs</a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <header class="hero">
       <img class="hero-img" src="./images/download.png" />
       <h1 class="hero-heading">
-        adarsh balika the <span class="heading-inverted"> web developer</span>
+        bhushan rahane the <span class="heading-inverted"> web developer</span>
       </h1>
     </header>
 
     <section class="section ow">
-      <div class="container container-center">
-        <h1>technologies</h1>
-        <p>
-          I'm familiar with HTML5, CSS3, Git, JavaScript, NodeJS, ReactJS, and
-          Web Hosting
-        </p>
+      <div class="container py-5">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h1 class="mb-4">technologies</h1>
+            <p class="lead">
+              I'm familiar with HTML5, CSS3, Git, JavaScript, NodeJS, ReactJS, and
+              Web Hosting
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="container container-center">
-        <h1>projects</h1>
-        <p>
-          I like to showcase my work and thus, you can see my projects hosted
-          online
-        </p>
-        <a class="link link-primary" href="/projects.html">See Projects</a>
+      <div class="container py-5">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h1 class="mb-4">projects</h1>
+            <p class="lead mb-4">
+              I like to showcase my work and thus, you can see my projects hosted
+              online
+            </p>
+            <a class="btn btn-primary btn-lg link-primary" href="https://github.com/bhushanrahane?tab=repositories">See Projects</a>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="section ow">
-      <div class="container container-center">
-        <h1>blogs</h1>
-        <p>
-          I am also working on some technical and non techincal blogs. I like to
-          document my journey of learning.
-        </p>
-        <a class="link link-secondary" href="/blogs.html">Read Blogs</a>
+      <div class="container py-5">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h1 class="mb-4">blogs</h1>
+            <p class="lead mb-4">
+              I am also working on some technical and non techincal blogs. I like to
+              document my journey of learning.
+            </p>
+            <a class="btn btn-outline-primary btn-lg link-secondary" href="https://blog.feedspot.in/indian_blogs/">Read Blogs</a>
+          </div>
+        </div>
       </div>
     </section>
 
     <footer class="footer">
-      <div class="footer-header">social media presence</div>
-      <ul class="social-links list-non-bullet">
-        <li class="list-item-inline">
-          <a class="link" href="https://github.com/neogcamp/"> github </a>
-        </li>
-        <li class="list-item-inline">
-          <a class="link" href="https://twitter.com/neogcamp"> twitter </a>
-        </li>
-        <li class="list-item-inline">
-          <a class="link" href="https://www.linkedin.com/company/neog-camp/">
-            linkedin
-          </a>
-        </li>
-      </ul>
+      <div class="container py-4">
+        <h4 class="footer-header mb-4">social media presence</h4>
+        <ul class="social-links list-inline mb-0">
+          <li class="list-inline-item">
+            <a class="link" href="https://github.com/neogcamp/"> github </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="link" href="https://twitter.com/neogcamp"> twitter </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="link" href="https://www.linkedin.com/company/neog-camp/">
+              linkedin
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Particles.js Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="particles-config.js"></script>
+    <!-- Intersection Observer for scroll animations -->
+    <script>
+      // Intersection Observer for scroll animations
+      const sections = document.querySelectorAll('.section');
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, {
+        threshold: 0.1
+      });
+
+      sections.forEach(section => {
+        observer.observe(section);
+      });
+    </script>
   </body>
 </html>
